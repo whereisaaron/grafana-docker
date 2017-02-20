@@ -2,6 +2,11 @@
 
 This project builds a Docker image with the latest master build of Grafana.
 
+This fork has been modified to work on Kubernetes.
+- Remove Docker volumes from Dockerfile
+- Default to logging to console
+- Add package URL to Dockerfile to enable automated builds
+
 ## Running your Grafana container
 
 Start your container binding the external port `3000`.
@@ -103,4 +108,3 @@ Supported variables:
 
 ### v3.1.1
 * Make it possible to install specific plugin version https://github.com/grafana/grafana-docker/issues/59#issuecomment-260584026
-
